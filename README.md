@@ -12,6 +12,7 @@ fn main() {
             "Rust",
             "Dart",
             "JS/TS",
+            "Terraform"
             ]};
 
     programmer.hello_world();
