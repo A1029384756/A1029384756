@@ -1,12 +1,12 @@
 ```rs
-use std::fmt::Error;
+use anyhow::Error;
 use rand::seq::SliceRandom;
 
 fn main() {
     let programmer: Programmer = Programmer{
         name: "Hayden Gray",
         languages: 
-            ["Python",
+            vec!["Python",
             "C", 
             "C++", 
             "Rust",
@@ -29,16 +29,16 @@ impl Programmer {
         format!("Hello, my name is {} ", self.name)
     }
 
-    fn do_work(&self) -> Result<Product, Error> {
+    fn do_work(&self) -> Result<Product> {
         let language = self.languages.choose(&mut rand::thread_rng());
         let mut done: bool = false;
-        let mut product: Result<Product, Error>;
+        let mut product: Result<Product>;
 
         while !done {
             //Do Work
         }
 
-        return product
+        product
     }
 }
 ```
