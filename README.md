@@ -1,5 +1,5 @@
 ```rs
-use anyhow::Error;
+use anyhow::Result;
 use rand::seq::SliceRandom;
 
 fn main() {
