@@ -16,7 +16,7 @@ fn main() {
             ]};
 
     programmer.hello_world();
-    programmer.do_work();
+    programmer.do_work()
 }
 
 struct Programmer {
