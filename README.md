@@ -2,7 +2,7 @@
 use anyhow::Result;
 use rand::seq::SliceRandom;
 
-fn main() {
+fn main() -> Result<Product> {
     let programmer: Programmer = Programmer{
         name: "Hayden Gray",
         languages: 
