@@ -8,8 +8,9 @@ fn main() -> Result<Product> {
         languages: 
             vec!["Python",
             "C", 
-            "C++", 
+            "C++",
             "Rust",
+            "Odin",
             "Dart",
             "JS/TS",
             "Terraform"
